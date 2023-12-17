@@ -8,6 +8,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* HEADER */
+
 header {
     position: fixed;
     top: 0;
@@ -18,8 +20,8 @@ header {
 
     gap: 5px;
 
-    /* TEST */
-    border: 1px solid red;
+    margin-top: 5px;
+    margin-right: 5px;
 }
 
 header div {
@@ -29,9 +31,19 @@ header div {
     padding: 3px;
 }
 
+/* FINE HEADER */
+
+/* INIZIO MAIN */
+
 /* test */
 main {
-    height: 1000px;
+    height: auto;
     width: auto;
     background-color: rgba(165, 42, 42, 0.171);
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
 }
+
