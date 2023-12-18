@@ -6,22 +6,20 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
 }
 
 /* HEADER */
 
 header {
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 5px;
+    right: 5px;
 
     display: flex;
     justify-content: end;
 
     gap: 5px;
-
-    margin-top: 5px;
-    margin-right: 5px;
 }
 
 header div {
@@ -35,25 +33,19 @@ header div {
 
 /* INIZIO MAIN */
 
-/* test */
 main {
-    height: auto;
-    width: auto;
-    background-color: rgba(165, 42, 42, 0.171);
+    width: 100%;
 
-    margin-left: auto;
-    margin-right: auto;
-    gap: 5px;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: 100vh;
+    gap: 15px 5px;
 
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+
+    padding: 70px;
+    padding-bottom: 120px;
 }
 
 .container {
@@ -62,11 +54,77 @@ main {
 }
 
 .micro {
-    position: fixed;
-    top: 125px;
+    position: relative;
+    bottom: 30px;
 
     color: white;
-    background: rgba(0, 0, 0, 0.503);
+    background-color: rgba(0, 0, 0, 0.477);
 
     padding: 3px;
+
+    display: inline-block;
+}
+
+/* FINE MAIN */
+
+/* INIZIO BAR */
+
+bar {
+    height: 100px;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #222222;
+    color: white;
+}
+
+.left , .center , .right {
+    height: 100%;
+
+    display: flex;
+
+    gap: 10px;
+}
+
+.pulsante {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    height: 100%;
+
+    padding: 10px;
+
+    position: relative;
+}
+
+.icona {
+    font-size: 30px;
+}
+
+.pulsante.freccia::after {
+    content: "^";
+
+    position: absolute;
+    right: 0px;
+}
+
+.verde {
+    color: #4BC800;
+}
+
+.right {
+    color: red;
+    background-color: #4A4A4A;
+
+    padding: 25px;
 }
