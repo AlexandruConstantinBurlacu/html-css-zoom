@@ -44,6 +44,17 @@ main {
     margin-left: auto;
     margin-right: auto;
 
-    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100vh;
 }
 
+.micro {
+    position: fixed;
+    top: 130px;
+
+    color: white;
+    background: rgba(0, 0, 0, 0.503);
+}
